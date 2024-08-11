@@ -10,9 +10,6 @@ NSP (New Swing Project) is a command-line tool that automates the initialization
 - [Installation](#installation)
 - [Usage](#usage)
 - [Options](#options)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -25,7 +22,8 @@ NSP (New Swing Project) is a command-line tool that automates the initialization
 ```bash
 git clone https://github.com/yourusername/nsp.git
 cd nsp
-sudo ./install.sh```
+sudo ./install.sh
+```
 
 This will install the `nsp` command and its associated man page.
 
@@ -36,7 +34,8 @@ This will install the `nsp` command and its associated man page.
 To initialize a new project:
 
 ```bash
-nsp <project_name> [flags...]```
+nsp <project_name> [flags...]
+```
 
 Replace `<project_name>` with your desired project name.
 
