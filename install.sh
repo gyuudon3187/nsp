@@ -127,7 +127,6 @@ __install() (
   __mv_temp_dir_to_install_path
 )
 
-# __init_vars
 __load_util_functions
 trap 'cleanup $TEMP_DIR' ERR
 __validate
