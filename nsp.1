@@ -1,0 +1,54 @@
+.\" Man page for nsp.sh
+.TH NSP 1 "August 2024" "1.0" "New Swing Project Manual"
+.SH NAME
+nsp \- New Swing Project setup script
+
+.SH SYNOPSIS
+.B nsp
+.I project_name
+[\fIflags...\fP]
+
+.SH DESCRIPTION
+The
+.B nsp
+script initializes a new Java Swing project with optional customization flags.
+
+.SH OPTIONS
+.TP
+.B -o, --oneFrame
+Set up the project with the Main class serving as a JFrame.
+
+.TP
+.B -s, --separate
+Set up the project with a Frame class, separate from the Main class, that serves as a JFrame.
+
+.TP
+.B -i, --icon
+Include icons in the project. Icons are provided by https://fontawesome.com/.
+
+.TP
+.B -u, --util
+Include a Java Swing util file in the project.
+
+.TP
+.B -v
+Enable verbose output for debugging.
+
+.SH EXAMPLES
+.TP
+Initialize a new project named "MySwingApp" with the Main class as the JFrame:
+.B nsp MySwingApp -o
+
+.TP
+Initialize a new project named "MySwingApp" with the Main class as the JFrame and include icons and Java Swing utilities:
+.B nsp MySwingApp -oiu
+
+.SH AUTHOR
+Daniel Dahlberg
+
+.SH LICENSE
+This script is licensed under the MIT License.
+
+.SH SEE ALSO
+.B bash(1),
+.B groff(7)
