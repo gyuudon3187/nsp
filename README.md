@@ -44,5 +44,5 @@ Replace `<project_name>` with your desired project name.
 - `-1`, `--oneFrame`: Create a project with a single-frame template.
 - `-s`, `--separate`: Create a project with separate frames.
 - `-i`, `--icon`: Include FontAwesome icons in your project.
-- `-u`, `--icon`: Include a Java file with various utility methods.
+- `-u`, `--util`: Include a Java file with various utility methods.
 - `-v`, `--verbose`: Enable verbose mode for detailed output.
