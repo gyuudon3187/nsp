@@ -127,28 +127,9 @@ __install() (
   __mv_temp_dir_to_install_path
 )
 
-# __init_vars
 __load_util_functions
 trap 'cleanup $TEMP_DIR' ERR
 __validate
 __install
 
 echo "Installation completed successfully!"
-
-# # Install the script
-# echo "Installing $SCRIPT_NAME to $SCRIPT_PATH"
-# cp ./$SCRIPT_NAME $SCRIPT_PATH
-# chmod +x $SCRIPT_PATH
-#
-# # Install the man page
-# echo "Installing man page to $MAN_PAGE_PATH"
-# mkdir -p $MAN_PAGE_PATH
-# cp ./$MAN_PAGE $MAN_PAGE_PATH
-# gzip -f $MAN_PAGE_PATH/$MAN_PAGE
-#
-# # Update the man database
-# echo "Updating man database"
-# mandb
-#
-# echo "Installation completed successfully!"
-#
